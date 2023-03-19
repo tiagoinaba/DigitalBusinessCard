@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #23252C;
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    width: 317px;
+    margin: 5rem auto;
+    background: #1A1B21;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &__info,
+    &__about,
+    &__interests {
+        padding: 0 3.5rem;
+
+    }
+
+    &__info {
+        text-align: center;
+        padding-top: 2.1rem;
+
+        &--pfp {
+            width: 100%;
+        }
+
+        &--name {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        &--role {
+            color: #F3BF99;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: .8rem 0;
+        }
+
+        &--website {
+            color: #F5F5F5;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        &--contacts-div {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            gap: 1.7rem;
+            
+            a,
+            a:link,
+            a:visited,
+            a:active,
+            button {
+                font-family: inherit;
+                font-size: 1.4rem;
+                text-decoration: none;
+                padding: .9rem 0;
+                text-align: center;
+                width: 115px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .8rem;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+
+            .email {
+                background-color: white;
+                color: #374151;
+            }
+
+            .linkedin {
+                background-color: #5093E2;
+                color: white;
+            }
+        }
+    }
+
+    &__about,
+    &__interests {
+        color: white;
+    }
+
+    &__about {
+        margin-top: 3.3rem;
+    }
+
+    &__interests {
+        margin-top: 2.7rem;
+    }
+
+    &__footer {
+        background-color: #161619;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+        gap: 2.4rem;
+        margin-top: 2.4rem;
+    }
+}
+
